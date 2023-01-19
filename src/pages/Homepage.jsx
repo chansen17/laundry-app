@@ -50,7 +50,7 @@ export default function Homepage() {
             </div>
             <div className="max-w-[1440px] mx-auto px-5 grid grid-cols-2 gap-4">
                 <div className="relative rounded-xl flex flex-col justify-end items-start bg-gray-100 h-72 shadow-2xl overflow-hidden">
-                    <div ref={mapContainer} className="w-full h-full overflow-hidden rounded-r-lg absolute top-0 left-0" style={{ height: '100%', width: '100%'}}/> 
+                    <div ref={mapContainer} className="w-full h-full overflow-hidden rounded-t-lg absolute top-0 left-0" style={{ height: '100%', width: '100%'}}/> 
                     <div className="absolute top-28 left-1/2 -translate-x-1/2">
                         <TbMapSearch className="text-4xl md:text-5xl lg:text-6xl text-white" />
                     </div>
