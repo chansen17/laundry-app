@@ -58,10 +58,10 @@ export default function Navbar() {
                     ))}
                 </div>
             </div>
-            <butto onClick={handleNavToggle} className="cursor-pointer py-2 px-2 flex items-center gap-2 md:gap-3 bg-teal-300 rounded-lg shadow-xl hover:shadow-2xl duration-300">
+            <button onClick={handleNavToggle} className="cursor-pointer py-2 px-2 flex items-center gap-2 md:gap-3 bg-teal-300 rounded-lg shadow-xl hover:shadow-2xl duration-300">
                 <span className="text-teal-800 font-semibold">Menu</span>
                 <FaBars className="text-lg md:text-xl text-white" />
-            </butto>
+            </button>
         </nav>
     </div>
     {toggled && (
