@@ -120,7 +120,7 @@ export default function MyOrder() {
                             </ul>
                         </div>
                     </div>
-                        <div className="h-10 w-10 bg-cyan-500 rounded-full shadow-lg grid place-items-center">
+                        <div className="h-10 w-10 bg-green-400 rounded-full shadow-lg grid place-items-center">
                             <FaCheck className="text-2xl md:text-3xl text-gray-100" />
                         </div>
                 </div>
