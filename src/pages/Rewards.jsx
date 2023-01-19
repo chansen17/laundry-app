@@ -11,8 +11,12 @@ export default function Rewards() {
     <div className="py-24">
         <div className="max-w-[1440px] mx-auto px-5">
             <div className="relative">
-                <input type="text" placeholder="Enter or scan barcode" className="py-4 px-2 bg-gray-100 w-full border-b-2 border-b-gray-400" />
-                <BsUpcScan className="absolute right-5 top-1/2 -translate-y-1/2 text-xl" />
+                <div id="scanContainer">
+                    <input id="scanInput" type="text" placeholder="Enter or scan barcode" className="py-4 px-2 bg-gray-100 w-full border-b-2 border-b-gray-400" />
+                    <div id="scanIcon" className="absolute right-5 top-1/2 -translate-y-1/2">
+                        <BsUpcScan className="text-xl" />
+                    </div>
+                </div>
             </div>
             <section className="py-4">
                 <p className="font-medium">All your items are descretley logged with a barcode</p>
