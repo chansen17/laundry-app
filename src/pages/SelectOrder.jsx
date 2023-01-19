@@ -1,35 +1,33 @@
-import React from 'react'
+import React, { useEffect, useState, useRef } from 'react'
+import mapboxgl from 'mapbox-gl'; // eslint-disable-line import/no-webpack-loader-syntax
 import Navbar from '../components/Navbar'
 import { Link } from 'react-router-dom';
 
 import { useLocation } from 'react-router-dom';
+import { options } from '../data';
 
-let options = [
-    {
-        option: 'Wash and Fold - Seperate from dry clean (48hrs -> Mon - Fri)',
-    },
-    {
-        option: 'Dry Clean - separate from wash and fold (3 days -> Mon - Fri)',
-    },
-    {
-        option: 'Alterations and Repair (specify in notes, 5 - 10 days)',
-    },
-    {
-        option: 'Shoe Shine (7 days -> Mon - Fri)',
-    },
-    {
-        option: 'Shirts, Laundered, Pressed and Hung (3 days -> Mon - Fri)',
-    },
-    {
-        option: 'Shoe Repair (Specify in notes, 10 days))',
-    }
-]
+// dummy account
+mapboxgl.accessToken = 'pk.eyJ1IjoiaXRzYm9iYnl0aGV0ZXN0ZXIiLCJhIjoiY2xkM2hhZzQyMGlreDNxcnlsdWw0cHZnYyJ9.9qGRwrXrtFw_2DIuql5FNA';
 
 export default function SelectOrder() {
 
     const {state} = useLocation();
-    console.log(state);
 
+    const mapContainer = useRef(null);
+    const map = useRef(null);
+    const [lng, setLng] = useState(-79.4163000);
+    const [lat, setLat] = useState(43.7001100);
+    const [zoom, setZoom] = useState(5);
+
+    useEffect(() => {
+        if (map.current) return; // initialize map only once
+            map.current = new mapboxgl.Map({
+            container: mapContainer.current,
+            style: 'mapbox://styles/mapbox/streets-v12',
+            center: [lng, lat],
+            zoom: zoom,
+            });
+        });
 
   return (
    <>
@@ -37,7 +35,7 @@ export default function SelectOrder() {
     <div className="w-full py-24">
         <div className="max-w-[1440px] mx-auto px-5">
             <p className="py-4 text-left text-teal-500 text-lg md:text-xl">Available lockers at</p>
-            <div className="w-full rounded-xl h-72 md:h-96 bg-zinc-800 flex">
+            <div className="w-full rounded-xl h-72 md:h-96 bg-zinc-800 flex flex-col md:flex-row shadow-2xl">
                 <div className="flex flex-col justify-between w-1/2 py-6 px-5">   
                    <div>
                         <p className="text-lg md:text-xl text-white">{state ? `# Locker ${state}` : "No locker selected. Please see:"}</p>
@@ -46,12 +44,10 @@ export default function SelectOrder() {
                    </div>
                     <p className="text-md md:text-lg text-gray-400">Toronto, ON M4M3N6</p>
                 </div>
-                <div className="w-1/2 p-6">
-                    <img className="h-full w-full object-cover" src="https://images.pexels.com/photos/4338273/pexels-photo-4338273.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""/> 
-                </div>
+                <div ref={mapContainer} className="w-full md:w-1/2 p-6 h-72 overflow-hidden rounded-r-lg" style={{ height: '100%', width: '100%'}}/> 
             </div>
 
-            <section className="py-6">
+            <section className="py-12">
                 <p className="text-lg md:text-xl font-bold">What's in your order?</p>
                 <ul className="py-4">
                     {options.map((o, i) => (

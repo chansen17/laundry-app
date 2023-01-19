@@ -36,9 +36,15 @@ export default function Settings() {
                         <li>Payment</li>
                     </ul>
                 </ul>
+                <ul className="w-full mt-4 border-t-2 border-t-gray-100">
+                    <li className="flex items-center gap-4 md:gap-6 mt-4">
+                        <p className="font-semibold text-lg md:text-xl">Enable Notifications</p>
+                        <button className="py-2 px-4 rounde-sm shadow-lg border-2 bg-gray-100 font-normal hover:bg-gray-200 duration-300">Enable</button>
+                    </li>
+                </ul>
             </section>
             <section className="mt-10 flex items-center">
-                <button className="w-1/2 md:w-1/4 mx-auto py-3 px-2 font-semibold bg-gray-100 border">Save Preferences</button>
+                <button className="w-1/2 md:w-1/4 mx-auto py-3 px-2 font-semibold bg-gray-100 border-2 hover:bg-gray-200 duration-300">Save Preferences</button>
             </section>  
         </div>
     </div>

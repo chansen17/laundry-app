@@ -11,6 +11,7 @@ import SelectOrder from './pages/SelectOrder';
 import Settings from './pages/Settings';
 
 export default function App() {
+
   return (
     <Router className="">
       <ScrollTop />

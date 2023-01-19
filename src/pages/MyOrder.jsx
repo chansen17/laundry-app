@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { FaCheck, FaShirtsinbulk, FaTshirt } from 'react-icons/fa';
 import { RiTShirtAirLine } from 'react-icons/ri';
 import { TbHanger } from 'react-icons/tb';
+import { RiShirtLine } from 'react-icons/ri';
 import Navbar from '../components/Navbar'
 
 export default function MyOrder() {
@@ -90,7 +91,7 @@ export default function MyOrder() {
             {selected === "current_orders" && orders[0].curr?.map((order,i) => (
                 <div key={i} className="w-full h-52 py-6 px-6 md:px-10 flex items-center justify-between gap-6 shadow-2xl shadow-teal-700/20 rounded-lg bg-gray-50">
                     <div className="flex items-center gap-4">
-                        <RiTShirtAirLine className="text-teal-500 text-3xl md:text-4xl lg:text-5xl xl:text-6xl"/>
+                        <RiTShirtAirLine className="text-teal-500 text-4xl md:text-5xl lg:text-6xl"/>
                         <div className=""> 
                             <h3 className="text-md md:text-lg font-semibold text-cyan-500 uppercase">{order.status}</h3>
                             <ul className="text-md md:text-lg capitalize text-gray-700">
@@ -109,7 +110,7 @@ export default function MyOrder() {
             {selected === "past_orders" && orders[1].past?.map((order,i) => (
                 <div key={i} className="w-full h-52 py-6 px-6 md:px-10 flex items-center justify-between gap-6 shadow-2xl shadow-teal-700/20 rounded-lg bg-gray-50">
                     <div className="flex items-center gap-4">
-                        <RiTShirtAirLine className="text-teal-500 text-3xl md:text-4xl lg:text-5xl xl:text-6xl"/>
+                        <RiShirtLine className="text-teal-500 text-4xl md:text-5xl lg:text-6xl"/>
                         <div className=""> 
                             <h3 className="text-md md:text-lg font-semibold text-cyan-500 uppercase">{order.status}</h3>
                             <ul className="text-md md:text-lg capitalize text-gray-700">
