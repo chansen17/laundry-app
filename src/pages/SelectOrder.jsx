@@ -44,7 +44,7 @@ export default function SelectOrder() {
                    </div>
                     <p className="text-md md:text-lg text-gray-400">Toronto, ON M4M3N6</p>
                 </div>
-                <div ref={mapContainer} className="w-full md:w-1/2 p-6 h-72 overflow-hidden rounded-r-lg" style={{ height: '100%', width: '100%'}}/> 
+                <div ref={mapContainer} className="w-full md:w-1/2 p-6 h-72 overflow-hidden rounded-t-lg" style={{ height: '100%', width: '100%'}}/> 
             </div>
 
             <section className="py-12">
