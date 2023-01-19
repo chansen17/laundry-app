@@ -34,13 +34,13 @@ export default function SelectOrder() {
    <Navbar />
     <div className="w-full py-24">
         <div className="max-w-[1440px] mx-auto px-5">
-            <p className="py-4 text-left text-teal-500 text-lg md:text-xl">Available lockers at</p>
+            <p className="py-4 text-left text-teal-500 text-lg md:text-xl lg:text-2xl font-semibold">Available lockers at</p>
             <div className="w-full rounded-xl h-72 md:h-96 bg-zinc-800 flex flex-col md:flex-row shadow-2xl">
                 <div className="flex flex-col justify-between w-1/2 py-6 px-5">   
                    <div>
                         <p className="text-lg md:text-xl text-white">{state ? `# Locker ${state}` : "No locker selected. Please see:"}</p>
-                        {!state && <Link to="/selectLocker" className="text-sm md:text-md text-gray-400 underline">See Lockers</Link>}
-                        <p className="text-md md:text-lg text-gray-400">63 Colgate Ave.</p>
+                        {!state && <Link to="/selectLocker" className="text-sm md:text-md text-teal-400 underline">Choose a locker</Link>}
+                        <p className="text-md md:text-lg lg:text-xl xl:text-2xl text-gray-400">63 Colgate Ave.</p>
                    </div>
                     <p className="text-md md:text-lg text-gray-400">Toronto, ON M4M3N6</p>
                 </div>

@@ -34,10 +34,10 @@ export default function SelectLocker() {
         <Navbar />
         <div className="h-full w-full py-24">
             <div className="max-w-[1440px] mx-auto px-5">
-                <p className="py-4 text-left text-teal-500 text-lg md:text-xl">Available lockers at</p>
+                <p className="py-4 text-left text-teal-500 text-lg md:text-xl lg:text-2xl font-semibold">Available lockers at</p>
                 <div className="w-full rounded-xl h-72 md:h-96 bg-zinc-800 flex flex-col md:flex-row shadow-2xl">
                     <div className="flex flex-col justify-between w-1/2 py-6 px-5">   
-                        <p className="text-lg md:text-xl text-white">63 Colgate Ave.</p>
+                        <p className="text-lg md:text-xl lg:text-2xl xl:text-3xl text-white">63 Colgate Ave.</p>
                         <p className="text-md md:text-lg text-gray-400">Toronto, ON M4M3N6</p>
                     </div>
                     <div ref={mapContainer} className="w-full md:w-1/2 p-6 h-72 overflow-hidden rounded-r-lg" style={{ height: '100%', width: '100%'}}/>   
