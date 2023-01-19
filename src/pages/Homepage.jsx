@@ -35,7 +35,7 @@ export default function Homepage() {
             <p className="font-bold text-2xl md:text-3xl lg:text-4xl text-teal-400">Pick up your order at home?</p>
             <div className="w-full h-72 bg-teal-500 rounded-xl relative flex justify-end flex-col items-start shadow-2xl shadow-teal-500/50">
                 <div className="absolute top-32 left-1/2 -translate-x-1/2">
-                    <BsTruck className="text-3xl md:text-4xl lg:text-5xl text-green-100" />
+                    <BsTruck className="text-5xl md:text-6xl lg:text-7xl text-green-100" />
                 </div>  
                 <div className="w-full p-3 text-left text-white text-md md:text-lg lg:text-xl border-t-2 border-t-green-100">
                     <p>Home pickup available</p>
