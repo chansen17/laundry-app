@@ -4,10 +4,6 @@ import { Link, useLocation } from 'react-router-dom';
 
 let routes = [
     {
-        name: 'Home',
-        path: '/'
-    },
-    {
         name: 'Select Locker',
         path: '/selectLocker'
     },
@@ -26,6 +22,10 @@ let routes = [
     {
         name: 'Settings',
         path: '/settings'
+    },
+    {
+        name: 'Closet',
+        path: '/closet'
     },
     {
         name: 'Rewards',
@@ -47,19 +47,19 @@ export default function Navbar() {
   return (
     <>
     <div className="w-full py-6 bg-teal-400 relative">
-        <nav className="max-w-[1440px] mx-auto px-10 flex items-center justify-between">
+        <nav className="px-10 flex items-center justify-between">
             <div>
-                {/* <p className="text-lg md:text-xl text-white">{path}</p> */}
+                <Link to="/" className="text-lg md:text-xl lg:text-2xl font-bold text-white">Laundry Concierge Inc.</Link>
             </div>
-            <div className="hidden md:flex items-center gap-4">
+            <div className="hidden lg:flex items-center gap-4">
                 <div className="flex items-center gap-2 md:gap-4">
                     {routes.map((r, i) => (
                         <Link onClick={() => AddPath(r.name)} key={i} to={r.path} className="text-white">{r?.name}</Link>
                     ))}
                 </div>
             </div>
-            <button onClick={handleNavToggle} className="cursor-pointer py-2 px-2 flex items-center gap-2 md:gap-3 bg-teal-300 rounded-lg shadow-xl hover:shadow-2xl duration-300">
-                <span className="text-teal-800 font-semibold">Menu</span>
+            <button onClick={handleNavToggle} className="cursor-pointer py-2 px-2 flex items-center gap-2 md:gap-3 bg-teal-500 rounded-lg shadow-xl duration-300">
+                <span className="text-white font-semibold">Menu</span>
                 <FaBars className="text-lg md:text-xl text-white" />
             </button>
         </nav>

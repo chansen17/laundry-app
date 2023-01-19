@@ -9,6 +9,7 @@ import Rewards from './pages/Rewards';
 import SelectLocker from './pages/SelectLocker';
 import SelectOrder from './pages/SelectOrder';
 import Settings from './pages/Settings';
+import Closet from './pages/Closet';
 
 export default function App() {
 
@@ -22,6 +23,7 @@ export default function App() {
 
 
         <Route path="/rewards" element={<Rewards />} />
+        <Route path="/closet" element={<Closet />} />
         <Route path="/myOrders" element={<MyOrder />} />
         <Route path="/laundryPreference" element={<LaundryPreferences />} />
         <Route path="/helpCenter" element={<HelpCenter />} />
