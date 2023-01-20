@@ -10,6 +10,7 @@ import SelectLocker from './pages/SelectLocker';
 import SelectOrder from './pages/SelectOrder';
 import Settings from './pages/Settings';
 import Closet from './pages/Closet';
+import Locations from './pages/Locations';
 
 export default function App() {
 
@@ -30,6 +31,7 @@ export default function App() {
 
 
 
+        <Route path="/locations" element={<Locations />} />
         <Route path="/settings" element={<Settings />} />
       </Routes>
     </Router>

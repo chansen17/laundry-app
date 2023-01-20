@@ -12,6 +12,10 @@ let routes = [
         path: '/selectOrder'
     },
     {
+        name: 'Locations',
+        path: '/locations'
+    },
+    {
         name: 'Laundry Preferences',
         path: '/laundryPreference'
     },
