@@ -51,13 +51,13 @@ export default function SelectOrder() {
                 <p className="text-lg md:text-xl font-bold">What's in your order?</p>
                 <ul className="py-4">
                     {options.map((o, i) => (
-                        <li key={i} className="my-6 py-3 w-full flex items-center justify-between border-b">
+                        <li key={i} className="my-6 py-3 w-full flex items-center justify-between gap-6 border-b">
                             {o.option}
-                            <input type="checkbox" value={o.selected} checked={o.selected} />
+                            <input type="checkbox" className="h-4 w-4 md:h-5 md:w-5" value={o.selected} checked={o.selected} />
                         </li>
                     ))}
                 </ul>
-                <div className="w-full flex items-center gap-2 border-b pb-4">
+                <div className="w-full flex items-center gap-4 border-b pb-4">
                     <input type="text" placeholder="Please enter your promo code" className="w-3/4 py-3 px-2 bg-gray-50 border border-gray-300 outline-0" />
                     <button className="w-1/4 py-3 px-2 bg-gray-100 border border-gray-300 hover:bg-gray-200 duration-200 capitalize">Apply</button>
                 </div>

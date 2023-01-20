@@ -21,12 +21,12 @@ export default function Closet() {
             <section className="py-4">
                 <p className="font-medium">All your items are descretley logged with a barcode</p>
             </section>
-            <section className="py-24 flex items-center justify-center">
-                <div className="text-center bg-gray-50 py-12 px-6">
+            <section className="py-24 flex items-center justify-center bg-gray-50 shadow-2xl">
+                <div className="text-center py-12 px-6">
                     <FaShoppingCart className="text-2xl md:text-3xl lg:text-4xl mx-auto mb-4 text-gray-500" />
                     <p className="text-lg md:text-xl font-semibold text-teal-500">It's a bit empty here...</p>
                     <p className="text-md md:text-lg py-3">You don't have items on your closet yet</p>
-                    <button className="py-3 px-2 rounded-sm bg-amber-400 text-white font-bold uppercase">place an order now</button>
+                    <button className="py-3 px-2 rounded-sm bg-amber-400 hover:bg-amber-300 text-white font-bold uppercase">place an order now</button>
                 </div>
             </section>
         </div>

@@ -30,7 +30,8 @@ export default function Locations() {
     <>
     <Navbar />
       <div className="">
-        
+        {/* map */}
+        <div></div>
       </div>
     </>
   )
