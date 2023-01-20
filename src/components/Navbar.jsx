@@ -28,16 +28,16 @@ let routes = [
         path: '/helpCenter'
     },
     {
-        name: 'Settings',
-        path: '/settings'
-    },
-    {
         name: 'Closet',
         path: '/closet'
     },
     {
         name: 'Rewards',
         path: '/rewards'
+    },
+    {
+        name: 'Settings',
+        path: '/settings'
     },
 ]
 
