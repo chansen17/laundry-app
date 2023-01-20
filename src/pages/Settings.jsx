@@ -20,9 +20,9 @@ export default function Settings() {
                     <input className="w-full py-2 px-1 border-b-2 border-b-gray-500" type="number" placeholder="Phone Number" />
                 </div>
             </section>
-            <section className="py-4 flex items-center gap-4 md:gap-6">
+            <section className="py-10    flex items-center gap-4 md:gap-6">
                 <div>
-                    <p className="text-lg md:text-xl font-semibold">Enable/Disable Biometric Login</p>
+                    <p className="text-md md:text-lg font-medium">Enable/Disable Biometric Login</p>
                 </div>
                 <input type="checkbox" className="h-4 w-4 md:h-5 md:w-5" />
             </section>
@@ -39,7 +39,7 @@ export default function Settings() {
                 {/* NOTIFICATIONS */}
                 <ul className="w-full mt-4 border-t-2 border-t-gray-100">
                     <li className="flex items-center gap-4 md:gap-6 mt-4">
-                        <button id="enableNotifications" className="py-2 px-4 rounde-sm shadow-lg bg-gray-100 font-normal hover:bg-gray-200 duration-300">Enable Notifications?</button>
+                        Enable Notifications? <button id="enableNotifications" className="py-2 px-4 rounde-sm shadow-lg bg-gray-100 font-normal hover:bg-gray-200 duration-300">Allow</button>
                     </li>
                 </ul>
             </section>

@@ -10,7 +10,7 @@ export default function Rewards() {
     <div className="py-24">
         <div className="max-w-[1440px] mx-auto px-5">
             <section className="py-24 flex items-center justify-center">
-                <div className="text-center bg-gray-50 py-12 px-6">
+                <div className="text-center bg-gray-50 py-12 px-6 shadow-2xl">
                     <AiOutlineTags className="text-5xl md:text-6xl lg:text-8xl mx-auto mb-4 text-teal-500" />
                     <p className="text-lmd md:text-lg font-medium text-teal-500">Invite friends and get free credits</p>
                     <p className="text-md md:text-lg py-3">Share your code to give your friends $30.00 off their first three orders and get $10.00 credit for every friend who tries Laundry Concierge Inc..</p>
