@@ -12,6 +12,10 @@ let routes = [
         path: '/selectOrder'
     },
     {
+        name: 'My Orders',
+        path: '/myOrders'
+    },
+    {
         name: 'Locations',
         path: '/locations'
     },
@@ -34,10 +38,6 @@ let routes = [
     {
         name: 'Rewards',
         path: '/rewards'
-    },
-    {
-        name: 'My Orders',
-        path: '/myOrders'
     },
 ]
 

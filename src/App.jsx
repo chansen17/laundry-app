@@ -11,6 +11,7 @@ import SelectOrder from './pages/SelectOrder';
 import Settings from './pages/Settings';
 import Closet from './pages/Closet';
 import Locations from './pages/Locations';
+import Footer from './components/Footer';
 
 export default function App() {
 
@@ -34,6 +35,7 @@ export default function App() {
         <Route path="/locations" element={<Locations />} />
         <Route path="/settings" element={<Settings />} />
       </Routes>
+      <Footer />
     </Router>
   )
 }
