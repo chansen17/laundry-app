@@ -30,7 +30,7 @@ export default function Locations() {
     <>
     <Navbar />
       <div className="relative h-screen">
-        <div className="w-full opacity-80 hover:opacity-100 focus:opacity-100 active:focus-100 md:max-w-2xl left-1/2 -translate-x-1/2 px-5 py-4 bg-teal-400 z-20 absolute top-0 md:top-12 shadow-2xl">
+        <div className="w-full opacity-80 hover:opacity-100 focus:opacity-100 active:focus-100 md:max-w-2xl left-1/2 -translate-x-1/2 px-5 py-4 bg-teal-400 z-20 absolute top-0 md:top-12 shadow-2xl rounded-md">
           <input type="text" className="py-2 px-3 w-full" placeholder="Search Locations 🔍" />
         </div>
         {/* map */}

@@ -52,7 +52,7 @@ export default function SelectOrder() {
                 <ul className="py-4">
                     {options.map((o, i) => (
                         <li key={i} className="my-6 py-3 w-full flex items-center justify-between gap-6 border-b">
-                            {o.option}
+                            <span className="max-w-sm">{o.option}</span>
                             <input type="checkbox" className="h-4 w-4 md:h-5 md:w-5" value={o.selected} checked={o.selected} />
                         </li>
                     ))}
