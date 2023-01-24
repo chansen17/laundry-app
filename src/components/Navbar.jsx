@@ -28,8 +28,8 @@ let routes = [
         path: '/helpCenter'
     },
     {
-        name: 'Closet',
-        path: '/closet'
+        name: 'My Closet',
+        path: '/myCloset'
     },
     {
         name: 'Rewards',
@@ -50,32 +50,33 @@ export default function Navbar() {
 
   return (
     <>
-    <div className="w-full py-6 bg-teal-400 relative">
+    {/* Nav Container */}
+    <div id="Navbar" className="w-full py-6 bg-native-blue relative">
         <nav className="px-10 flex items-center justify-between">
             <div>
-                <Link to="/" className="text-lg md:text-xl lg:text-2xl font-bold text-white">Laundry Concierge Inc.</Link>
+                <Link to="/" className="text-lg md:text-xl lg:text-2xl font-bold text-sky-100">Mobile Laundry</Link>
             </div>
-            <div className="hidden lg:flex items-center gap-4">
+            <div className="hidden xl:flex items-center gap-4">
                 <div className="flex items-center gap-2 md:gap-4">
                     {routes.map((r, i) => (
-                        <Link onClick={() => AddPath(r.name)} key={i} to={r.path} className="text-white">{r?.name}</Link>
+                        <Link onClick={() => AddPath(r.name)} key={i} to={r?.path} className="text-white">{r?.name}</Link>
                     ))}
                 </div>
             </div>
-            <button onClick={handleNavToggle} className="cursor-pointer py-2 px-2 flex items-center gap-2 md:gap-3 bg-teal-500 rounded-lg shadow-xl duration-300">
+            <button onClick={handleNavToggle} className="cursor-pointer py-2 px-2 flex items-center gap-2 md:gap-3 bg-blue-400/50 rounded-lg shadow-xl duration-300">
                 <span className="text-white font-semibold">Menu</span>
                 <FaBars className="text-lg md:text-xl text-white" />
             </button>
         </nav>
     </div>
     {toggled && (
-        <div className="aniamte animate__animated animate__slideInRight animate__fast fixed h-screen top-0 right-0 w-3/4 md:w-1/2 lg:w-1/4 bg-teal-500 py-12 shadow-2xl shadow-black/50 z-40">
+        <div className="aniamte animate__animated animate__slideInRight animate__fast fixed h-screen top-0 right-0 w-3/4 md:w-1/2 lg:w-1/4 bg-native-blue py-12 shadow-2xl shadow-black/50 z-40">
             <button onClick={handleNavToggle} className="absolute top-5 left-5">
                 <FaTimes className="text-xl md:text-2xl lg:text-3xl text-white"/>
             </button>
             <div className="w-full flex flex-col items-end space-y-6">
                 {routes.map((r, i) => (
-                    <Link key={i} to={r.path} className="text-lg md:text-xl lg:text-2xl text-right py-4 px-2 w-full font-semibold text-white border-b border-b-teal-400">{r.name}</Link>
+                    <Link key={i} to={r.path} className="text-lg md:text-xl lg:text-2xl text-right py-4 px-2 w-full font-semibold text-white border-b border-sky-800">{r.name}</Link>
                 ))}
             </div>
         </div>

@@ -15,9 +15,9 @@ export default function SelectOrder() {
 
     const mapContainer = useRef(null);
     const map = useRef(null);
-    const [lng, setLng] = useState(-79.4163000);
-    const [lat, setLat] = useState(43.7001100);
-    const [zoom, setZoom] = useState(5);
+    const [lng, setLng] = useState(-73.971321);
+    const [lat, setLat] = useState(40.776676);
+    const [zoom, setZoom] = useState(11);
 
     useEffect(() => {
         if (map.current) return; // initialize map only once
@@ -32,10 +32,10 @@ export default function SelectOrder() {
   return (
    <>
    <Navbar />
-    <div className="w-full py-24">
+    <div className="h-full w-full py-12 md:py-24">
         <div className="max-w-[1440px] mx-auto px-5">
-            <p className="py-4 text-left text-teal-500 text-lg md:text-xl lg:text-2xl font-semibold">Available lockers at</p>
-            <div className="w-full rounded-xl h-72 md:h-96 bg-zinc-800 flex flex-col md:flex-row shadow-2xl">
+            <p className="py-4 text-left text-native-blue text-lg md:text-xl lg:text-2xl font-semibold">Available lockers at</p>
+            <div className="w-full rounded-xl h-72 md:h-96 bg-zinc-800 flex flex-col md:flex-row shadow-xl">
                 <div className="flex flex-col justify-between w-1/2 py-6 px-5">   
                    <div>
                         <p className="text-lg md:text-xl text-white">{state ? `# Locker ${state}` : "No locker selected. Please see:"}</p>
@@ -44,11 +44,11 @@ export default function SelectOrder() {
                    </div>
                     <p className="text-md md:text-lg text-gray-400">Toronto, ON M4M3N6</p>
                 </div>
-                <div ref={mapContainer} className="w-full md:w-1/2 p-6 h-72 overflow-hidden rounded-t-lg" style={{ height: '100%', width: '100%'}}/> 
+                <div ref={mapContainer} className="w-full md:w-1/2 p-6 h-72 overflow-hidden rounded-b-lg md:rounded-r-lg" style={{ height: '100%', width: '100%'}}/> 
             </div>
 
             <section className="py-12">
-                <p className="text-lg md:text-xl font-bold">What's in your order?</p>
+                <p className="text-lg md:text-xl font-bold text-native-blue">What's in your order?</p>
                 <ul className="py-4">
                     {options.map((o, i) => (
                         <li key={i} className="my-6 py-3 w-full flex items-center justify-between gap-6 border-b">
@@ -65,9 +65,9 @@ export default function SelectOrder() {
                     <input type="textarea" placeholder="Please enter any notes you may have for us .." className="w-full py-3 px-2 bg-gray-50 border border-gray-300 outline-0" />
                 </div>
             </section>
-            <section className="py-10 flex items-center">
-                <button className="w-1/2 md:w-1/4 mx-auto py-3 px-2 border bg-gray-50 font-semibold hover:bg-gray-200 duration-200">Place Order</button>
-            </section>
+            <section className="mt-10 flex items-center">
+                <button className="w-1/2 md:w-1/4 mx-auto py-3 px-2 font-semibold bg-native-blue text-white shadow-lgduration-300">Save Preferences</button>
+            </section>  
         </div>
     </div>
    </>

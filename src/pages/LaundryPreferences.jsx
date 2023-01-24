@@ -106,35 +106,35 @@ export default function LaundryPreferences() {
   return (
     <>
     <Navbar />
-    <div className="py-24">
+    <div className="h-full w-full py-12 md:py-24">
         <div className="max-w-[1440px] mx-auto px-5 py-4">
-            <p className="text-xl md:text-2xl font-semibold text-teal-500">Set up your preferences</p>
+            <p className="text-xl md:text-2xl font-semibold text-native-blue">Set up your preferences</p>
             <div className="mt-8">
-              <p className="font-medium pb-2 text-teal-500">Fabric Softener</p>
+              <p className="font-medium pb-2 text-native-blue">Fabric Softener</p>
                 <Select options={softener}/>
             </div>
             <div className="mt-8">
-              <p className="font-medium pb-2 text-teal-500">Air Dry</p>
+              <p className="font-medium pb-2 text-native-blue">Air Dry</p>
                 <Select options={airDry}/>
             </div>
             <div className="mt-8">
-              <p className="font-medium pb-2 text-teal-500">White Temperature Wash</p>
+              <p className="font-medium pb-2 text-native-blue">White Temperature Wash</p>
                 <Select options={whiteTemp}/>
             </div>
             <div className="mt-8">
-              <p className="font-medium pb-2 text-teal-500">Colour Temperature Wash</p>
+              <p className="font-medium pb-2 text-native-blue">Colour Temperature Wash</p>
                 <Select options={colorTemp}/>
             </div>
             <div className="mt-8">
-              <p className="font-medium pb-2 text-teal-500">Detergent</p>
+              <p className="font-medium pb-2 text-native-blue">Detergent</p>
                 <Select options={detergent}/>
             </div>
             <div className="mt-8">
-              <p className="font-medium pb-2 text-teal-500">Bleach</p>
+              <p className="font-medium pb-2 text-native-blue">Bleach</p>
                 <Select options={bleach}/>
             </div>
             <section className="mt-10 flex items-center">
-                <button className="w-1/2 md:w-1/4 mx-auto py-3 px-2 font-semibold bg-gray-100 shadow-lg hover:bg-gray-200 duration-300">Save Preferences</button>
+                <button className="w-1/2 md:w-1/4 mx-auto py-3 px-2 font-semibold bg-native-blue text-white shadow-lgduration-300">Save Preferences</button>
             </section>  
         </div>
     </div>

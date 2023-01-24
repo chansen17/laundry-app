@@ -25,7 +25,7 @@ export default function App() {
 
 
         <Route path="/rewards" element={<Rewards />} />
-        <Route path="/closet" element={<Closet />} />
+        <Route path="/myCloset" element={<Closet />} />
         <Route path="/myOrders" element={<MyOrder />} />
         <Route path="/laundryPreference" element={<LaundryPreferences />} />
         <Route path="/helpCenter" element={<HelpCenter />} />

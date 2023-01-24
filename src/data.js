@@ -43,7 +43,7 @@ let options = [
         option: 'Shirts, Laundered, Pressed and Hung (3 days -> Mon - Fri)',
     },
     {
-        option: 'Shoe Repair (Specify in notes, 10 days))',
+        option: 'Shoe Repair (Specify in notes, 10 days)',
     }
 ]
 

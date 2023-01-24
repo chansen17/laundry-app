@@ -82,11 +82,11 @@ export default function MyOrder() {
     <>
     <Navbar />
     <div className="">
-        <div className="w-full flex items-center justify-center bg-teal-400">
-            <button value="current_orders" onClick={(e) => setSelected(e.target.value)} className={selected === 'current_orders' ? 'text-sm md:text-md w-full py-4 uppercase text-white bg-teal-500 hover:bg-teal-500 border-b-4 border-b-yellow-400 duration-300' : 'text-sm md:text-md w-full py-4 uppercase text-white hover:bg-teal-500 duration-300 border-b-4 border-b-teal-400'}>current orders</button>
-            <button value="past_orders" onClick={(e) => setSelected(e.target.value)}className={selected === 'past_orders' ? 'text-sm md:text-md w-full py-4 uppercase text-white bg-teal-500 hover:bg-teal-500 duration-300 border-b-4 border-b-yellow-400' : 'text-sm md:text-md w-full py-4 uppercase text-white hover:bg-teal-500 duration-300 border-b-4 border-b-teal-400'}>past orders</button>
+        <div className="w-full flex items-center justify-center bg-native-blue">
+            <button value="current_orders" onClick={(e) => setSelected(e.target.value)} className={selected === 'current_orders' ? 'text-sm md:text-md w-full py-4 uppercase text-white border-b-4 border-b-teal-400 duration-300' : 'text-sm md:text-md w-full py-4 uppercase text-white duration-300 border-b-4 border-b-transparent'}>current orders</button>
+            <button value="past_orders" onClick={(e) => setSelected(e.target.value)} className={selected === 'past_orders' ? 'text-sm md:text-md w-full py-4 uppercase text-white border-b-4 border-b-teal-400 duration-300' : 'text-sm md:text-md w-full py-4 uppercase text-white duration-300 border-b-4 border-b-transparent'}>past orders</button>
         </div>
-        <div className="max-w-[1440px] mx-auto px-5 py-24 grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="max-w-[1440px] mx-auto px-5 py-12 md:py-24 grid grid-cols-1 md:grid-cols-2 gap-4">
             {/* CURRENT_ORDERS UI */}
             {selected === "current_orders" && orders[0].curr?.map((order,i) => (
                 <div key={i} className="w-full h-52 py-6 px-6 md:px-10 flex items-center justify-between gap-6 shadow-2xl shadow-teal-700/20 rounded-lg bg-gray-50">
@@ -120,9 +120,9 @@ export default function MyOrder() {
                             </ul>
                         </div>
                     </div>
-                        <div className="h-8 w-8 lg:h-10 lg:w-10 bg-green-400 rounded-full shadow-lg grid place-items-center">
-                            <FaCheck className="text-xl md:text-2xl text-gray-100" />
-                        </div>
+                    <div className="h-8 w-8 lg:h-10 lg:w-10 bg-green-500 rounded-full shadow-lg grid place-items-center">
+                        <FaCheck className="text-xl md:text-2xl text-gray-100" />
+                    </div>
                 </div>
             ))}
         </div>
