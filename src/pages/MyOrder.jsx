@@ -1,8 +1,5 @@
 import React, { useState } from 'react'
-import { FaCheck, FaShirtsinbulk, FaTshirt } from 'react-icons/fa';
-import { RiTShirtAirLine } from 'react-icons/ri';
-import { TbHanger } from 'react-icons/tb';
-import { RiShirtLine } from 'react-icons/ri';
+import { TbShirtOff, TbHanger, TbChecks, TbRotate2 } from 'react-icons/tb';
 import Navbar from '../components/Navbar'
 
 export default function MyOrder() {
@@ -91,7 +88,7 @@ export default function MyOrder() {
             {selected === "current_orders" && orders[0].curr?.map((order,i) => (
                 <div key={i} className="w-full h-52 py-6 px-6 md:px-10 flex items-center justify-between gap-6 shadow-2xl shadow-teal-700/20 rounded-lg bg-gray-50">
                     <div className="flex items-center gap-4">
-                        <RiTShirtAirLine className="text-teal-500 text-4xl md:text-5xl lg:text-6xl"/>
+                        <TbShirtOff className="text-teal-500 text-4xl md:text-5xl lg:text-6xl"/>
                         <div className=""> 
                             <h3 className="text-md md:text-lg font-semibold text-cyan-500 uppercase">{order.status}</h3>
                             <ul className="text-md md:text-lg capitalize text-gray-700">
@@ -102,7 +99,7 @@ export default function MyOrder() {
                         </div>
                     </div>
                         <div className="h-10 w-10 bg-cyan-500 rounded-full shadow-lg grid place-items-center">
-                            <TbHanger className="text-2xl md:text-3xl text-gray-100" />
+                            <TbRotate2 className="text-2xl md:text-3xl text-gray-100" />
                         </div>
                 </div>
             ))}
@@ -110,7 +107,7 @@ export default function MyOrder() {
             {selected === "past_orders" && orders[1].past?.map((order,i) => (
                 <div key={i} className="w-full h-52 py-6 px-6 md:px-10 flex items-center justify-between gap-6 shadow-2xl shadow-teal-700/20 rounded-lg bg-gray-50">
                     <div className="flex items-center gap-4">
-                        <RiShirtLine className="text-teal-500 text-4xl md:text-5xl lg:text-6xl"/>
+                        <TbHanger className="text-teal-500 text-4xl md:text-5xl lg:text-6xl"/>
                         <div className=""> 
                             <h3 className="text-md md:text-lg font-semibold text-cyan-500 uppercase">{order.status}</h3>
                             <ul className="text-md md:text-lg capitalize text-gray-700">
@@ -121,7 +118,7 @@ export default function MyOrder() {
                         </div>
                     </div>
                     <div className="h-8 w-8 lg:h-10 lg:w-10 bg-green-500 rounded-full shadow-lg grid place-items-center">
-                        <FaCheck className="text-xl md:text-2xl text-gray-100" />
+                        <TbChecks className="text-xl md:text-2xl text-gray-100" />
                     </div>
                 </div>
             ))}

@@ -1,6 +1,5 @@
 import React from 'react';
-import { TbMapSearch } from 'react-icons/tb';
-import { GiLockers } from 'react-icons/gi';
+import { TbMapSearch, TbLockAccess } from 'react-icons/tb';
 
 import MapPreview from '../assets/nyc-preview.jpg';
 import { Link } from 'react-router-dom';
@@ -28,7 +27,7 @@ const HomeGridBlocks = () => {
                 <Link to="/selectLocker">
                     <div className="relative rounded-xl flex flex-col justify-end items-start bg-amber-300 h-72 shadow-2xl shadow-yellow-500/20">
                         <div className="absolute top-28 left-1/2 -translate-x-1/2">
-                            <GiLockers className="text-4xl md:text-5xl lg:text-6xl text-native-blue" />
+                            <TbLockAccess className="text-5xl md:text-6xl lg:text-7xl text-native-blue" />
                         </div>
                         <div className="p-3 text-native-blue">
                             <p className="font-semibold text-lg md:text-xl">Enter Your Locker Number</p>

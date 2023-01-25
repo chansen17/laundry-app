@@ -4,7 +4,7 @@ import Navbar from '../components/Navbar'
 import { ToastContainer, toast } from 'react-toastify';
   import 'react-toastify/dist/ReactToastify.css';
 
-import { AiOutlineTags } from 'react-icons/ai';
+import { TbTags } from 'react-icons/tb';
 
 export default function Rewards() {
     const [userShareCode, setUserShareCode] = useState('ML0033517');
@@ -34,7 +34,7 @@ export default function Rewards() {
         <div className="max-w-[1440px] mx-auto px-5">
             <section className="pb-24 flex items-center justify-center">
                 <div className="w-full text-center bg-gray-100 py-12 px-6 shadow-2xl">
-                    <AiOutlineTags className="text-5xl md:text-6xl lg:text-8xl mx-auto mb-4 text-teal-500" />
+                    <TbTags className="text-5xl md:text-6xl lg:text-8xl mx-auto mb-4 text-teal-500" />
                     <p className="text-lmd md:text-lg font-medium text-teal-500">Invite friends and get free credits</p>
                     <p className="max-w-xl mx-auto text-md md:text-lg py-3">Share your code to get your friends discount</p>
                     <Link to="/" className="inline-block py-3 px-2 rounded-md bg-amber-400 text-white font-bold uppercase hover:bg-amber-300 duration-300">place an order now</Link>
