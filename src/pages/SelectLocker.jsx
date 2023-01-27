@@ -38,7 +38,7 @@ export default function SelectLocker() {
                 <div className="w-full rounded-xl h-72 md:h-96 bg-zinc-800 flex flex-col md:flex-row shadow-xl">
                     <div className="flex flex-col justify-between w-1/2 py-6 px-5">   
                         <p className="text-lg md:text-xl lg:text-2xl xl:text-3xl text-white">63 Colgate Ave.</p>
-                        <p className="text-md md:text-lg text-gray-400">Toronto, ON M4M3N6</p>
+                        <p className="text-sm md:text-md text-gray-400">Manhattan, NYC</p>
                     </div>
                     <div ref={mapContainer} className="w-full md:w-1/2 p-6 h-72 overflow-hidden rounded-b-lg md:rounded-r-lg" style={{ height: '100%', width: '100%'}}/>   
                 </div>

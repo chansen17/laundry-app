@@ -42,7 +42,7 @@ export default function SelectOrder() {
                         {!state && <Link to="/selectLocker" className="text-sm md:text-md text-teal-400 underline">Choose a locker</Link>}
                         <p className="text-md md:text-lg lg:text-xl xl:text-2xl text-gray-400">63 Colgate Ave.</p>
                    </div>
-                    <p className="text-md md:text-lg text-gray-400">Toronto, ON M4M3N6</p>
+                    <p className="text-sm md:text-md text-gray-400">Manhattan, NYC</p>
                 </div>
                 <div ref={mapContainer} className="w-full md:w-1/2 p-6 h-72 overflow-hidden rounded-b-lg md:rounded-r-lg" style={{ height: '100%', width: '100%'}}/> 
             </div>
