@@ -13,7 +13,7 @@ const HomeGridBlocks = () => {
             </div>
             <div className="max-w-[1440px] mx-auto px-5 grid grid-cols-2 gap-4">
                 <Link to="/locations">
-                    <div className="relative rounded-xl flex flex-col justify-end items-start bg-gradient-to-t from-native-blue h-72 shadow-2xl overflow-hidden">
+                    <div className="relative rounded-xl flex flex-col justify-end items-start bg-gradient-to-t from-native-blue h-72 shadow-2xl shadow-native-blue/50 overflow-hidden">
                         <img src={MapPreview} className="absolute top-0 left-0 h-full -z-10 w-full object-cover" />
                         <div className="absolute top-28 left-1/2 -translate-x-1/2">
                             <TbMapSearch className="text-4xl md:text-5xl lg:text-6xl text-white" />
@@ -25,7 +25,7 @@ const HomeGridBlocks = () => {
                     </div>
                 </Link>
                 <Link to="/selectLocker">
-                    <div className="relative rounded-xl flex flex-col justify-end items-start bg-amber-300 h-72 shadow-2xl shadow-yellow-500/20">
+                    <div className="relative rounded-xl flex flex-col justify-end items-start bg-amber-300 h-72 shadow-2xl shadow-yellow-500/40">
                         <div className="absolute top-28 left-1/2 -translate-x-1/2">
                             <TbLockAccess className="text-5xl md:text-6xl lg:text-7xl text-native-blue" />
                         </div>

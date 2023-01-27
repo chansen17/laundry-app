@@ -21,7 +21,7 @@ export default function HelpCenter() {
               <div className="bg-native-blue inline-block rounded-2xl p-3 shadow-xl">
                 <TbPhone className="text-2xl md:text-3xl text-white" />
                 </div>
-                <p className="pt-3 font-bold">Cal support at <br/> <span className="font-light">+123456</span></p>
+                <p className="pt-3 font-bold">Call support at <br/> <span className="font-light">+123456</span></p>
               </div>  
             </div>
         </div>

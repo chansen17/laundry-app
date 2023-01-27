@@ -63,7 +63,7 @@ export default function Navbar() {
                     ))}
                 </div>
             </div>
-            <button onClick={handleNavToggle} className="cursor-pointer py-2 px-2 flex items-center gap-2 md:gap-3 bg-blue-400/50 rounded-lg shadow-xl duration-300">
+            <button onClick={handleNavToggle} className="cursor-pointer py-2 px-2 flex items-center gap-2 md:gap-3 bg-sky-600 hover:bg-sky-500 rounded-lg shadow-xl duration-300">
                 <span className="text-white font-semibold">Menu</span>
                 <FaBars className="text-lg md:text-xl text-white" />
             </button>

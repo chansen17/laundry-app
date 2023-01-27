@@ -17,7 +17,7 @@ export default function SelectOrder() {
     const map = useRef(null);
     const [lng, setLng] = useState(-73.971321);
     const [lat, setLat] = useState(40.776676);
-    const [zoom, setZoom] = useState(11);
+    const [zoom, setZoom] = useState(12);
 
     useEffect(() => {
         if (map.current) return; // initialize map only once

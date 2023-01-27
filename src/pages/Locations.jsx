@@ -13,9 +13,9 @@ export default function Locations() {
 
     const mapContainer = useRef(null);
     const map = useRef(null);
-    const [lng, setLng] = useState(-79.4163000);
-    const [lat, setLat] = useState(43.7001100);
-    const [zoom, setZoom] = useState(9);
+    const [lng, setLng] = useState(-73.971321);
+    const [lat, setLat] = useState(40.776676);
+    const [zoom, setZoom] = useState(12);
 
     useEffect(() => {
         if (map.current) return; // initialize map only once
@@ -30,7 +30,7 @@ export default function Locations() {
     <>
     <Navbar />
       <div className="relative h-screen">
-        <div className="w-full opacity-80 hover:opacity-100 focus:opacity-100 active:focus-100 md:max-w-2xl left-1/2 -translate-x-1/2 px-5 py-4 bg-native-blue z-20 absolute top-0 md:top-12 shadow-2xl rounded-md">
+        <div className="w-full opacity-80 hover:opacity-100 focus:opacity-100 active:focus-100 md:max-w-2xl left-1/2 -translate-x-1/2 px-5 py-4 bg-native-blue z-20 absolute top-0 md:top-12 shadow-2xl shadow-native-blue rounded-b-lg md:rounded-lg">
           <input type="text" className="py-2 px-3 w-full" placeholder="Search Locations 🔍" />
         </div>
         {/* map */}
